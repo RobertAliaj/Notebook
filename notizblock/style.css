@@ -1,0 +1,355 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-parent {
+    width: 100%;
+    background-color: rgba(254 239 195 / 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 14%);
+}
+
+.header-child-1 {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-parent img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+hr {
+    height: 2px;
+    background-color: white;
+    width: 99%;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.header-parent a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-parent a:hover {
+    text-decoration: underline;
+}
+
+.header-child-2 {
+    margin-bottom: 8px;
+}
+
+.header-child-2 span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 16px;
+}
+
+.card-parent {
+    box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 14%);
+    padding: 8px;
+    margin: 16px 16px 0px 16px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 10px;
+    word-wrap: break-word;
+    position: relative;
+    background-color: rgba(254 239 195 / 80%);
+}
+
+.card-parent-trash {
+    box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 14%);
+    padding: 8px;
+    margin: 16px 16px 0px 16px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 10px;
+    word-wrap: break-word;
+    position: relative;
+    background-color: lightsalmon;
+}
+
+.card-parent:hover {
+    transition: all 125ms ease;
+    transform: translate(0, -1px);
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 14%);
+    cursor: pointer;
+}
+
+.card-parent-trash:hover {
+    transition: all 125ms ease;
+    transform: translate(0, -1px);
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 14%);
+    cursor: pointer;
+}
+
+.card-parent h3 {
+    text-transform: capitalize;
+}
+
+.card-parent-trash h3 {
+    text-transform: capitalize;
+}
+
+.card-child {
+    display: flex;
+    align-items: center;
+}
+
+.card-parent a {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.card-parent-trash a {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.resave-logo {
+    right: 30px !important;
+}
+
+.span {
+    white-space: pre-wrap;
+}
+
+.textArea {
+    height: 200px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    resize: none;
+    border: 1px solid grey;
+}
+
+input {
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid grey;
+    text-transform: capitalize;
+}
+
+button {
+
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(254 239 195 / 80%);
+    padding: 8px;
+    border: 0px;
+}
+
+button:hover {
+    background-color: rgba(254 239 80 / 80%);
+    ;
+}
+
+.notes-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bg1 {
+    background-color: rgba(254 239 195 / 80%);
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trash-page {
+    max-height: 500px;
+    min-height: 124px;
+    max-width: 735px;
+    min-width: 704px;
+    background-color: white;
+    border: 1 px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-trash {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.trash-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.trash-notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+@media (max-width: 1300px) {
+
+    .notes-content {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .formDiv {
+        width: 100%;
+    }
+
+    .trash-page {
+        max-width: 90%;
+        min-width: min-content;
+    }
+
+    .notes-content {
+        width: 100%;
+    }
+}
+
+@media(max-width: 752px) {
+    .card-parent {
+        margin: 16px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .notes-content {
+        width: 100%;
+    }
+
+    .trash-page {
+        max-width: 90%;
+        min-width: min-content;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .formDiv {
+        width: 100%;
+    }
+
+    .trash-page {
+        max-width: 85%;
+        min-width: 81%;
+    }
+}
+
+@media(max-width: 450px) {
+    .card-parent-trash {
+        margin: 16px 0px 0px 0px;
+        width: 245px;
+        ;
+    }
+
+    button {
+        color: black;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-parent img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    h2 {
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .formDiv {
+        width: 100%;
+    }
+
+    .card-parent {
+        margin: 16px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .header-child-2 {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .notes-content {
+        width: 100%;
+    }
+
+    .trash-page {
+        width: 77%;
+        min-width: 60%;
+    }
+
+    button {
+        color: black;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .trash-page {
+        width: 72%;
+        min-width: 60%;
+    }
+
+
+    button {
+        color: black;
+    }
+}

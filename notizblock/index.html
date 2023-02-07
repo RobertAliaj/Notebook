@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+
+    <link rel="icon" type="image/gif" href="../img/haftnotiz.ico">
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body onload="init()"> 
+
+    <div class="header-parent">
+        <div class="header-child-1">
+            <a href="index.html" title="Neues Notiz...">
+                <img src="../img/haftnotiz.png" class="note-icon">
+            </a>
+            <h1>Notizblock</h1>
+            <a onclick="openTrashBin(), renderTrashBin()" title="Papierkorb..">
+                <img src="../img/file.png" class="trash-logo">
+            </a>
+        </div>
+        <hr>
+        <div class="header-child-2">
+            <span>Füge eine neue Notiz hinzu..</span>
+        </div>
+    </div>
+
+
+    <div id="content" class="mainDiv">
+    </div>
+
+    <div id="notes-content" class="notes-content"></div>
+
+
+    <div id="bg1" class="bg1 d-none"  >
+        <div class="trash-page">
+            <a onclick="closeTrashBin()" class="exit-trash" title="Fenster schließen..">
+                <img src="../img/x-mark-16.ico" alt="">
+            </a>
+            <div id="trash" class="trash-notes">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
